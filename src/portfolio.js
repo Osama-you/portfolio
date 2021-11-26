@@ -3,7 +3,32 @@ const header = {
   title: 'JS.',
 };
 
-const projects = [];
+const projects = [
+  {
+    name: 'Project 1',
+    description:
+      'Amet asperiur? Voluptate ores et impedit aliquam consectet s sed a nulla ipsa officia et esse aliquam',
+    stack: ['TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Project 2',
+    description:
+      'Amet asperiur? Volup te ores et impe tate ores et impedit aliquam consectet s sed a nulla ipsa officia et esse aliquam',
+    stack: ['TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Project 3',
+    description:
+      'Amet asperiur? Voluptate ores et impedit aliqua te ores et impe  ipsa officia et m consectet s sed a nulla ipsa officia et esse aliquam',
+    stack: ['TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+];
 
 const skills = [
   'HTML',
