@@ -1,4 +1,4 @@
-import { Header, About } from 'components';
+import { Header, About, Projects } from 'components';
 import { useThemeContext } from './contexts/theme';
 
 import './App.css';
@@ -11,6 +11,7 @@ const App = () => {
       <Header />
       <main>
         <About />
+        <Projects />
       </main>
     </div>
   );
