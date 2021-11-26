@@ -1,0 +1,33 @@
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+  text-align: center;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project__stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.2em 0;
+}
+
+.project__description {
+  margin-top: 1em;
+}
+
+.project__stack-item {
+  color: var(--clr-fg-alt);
+  margin: 0.5em;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project .link--icon {
+  margin-left: 0.5em;
+}
