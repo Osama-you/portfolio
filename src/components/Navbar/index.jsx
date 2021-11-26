@@ -47,7 +47,7 @@ const Navbar = () => {
           </li>
         )}
 
-        {contact.email ? (
+        {contact.email && (
           <li className="nav__list-item">
             <a
               className="link link--nav"
@@ -57,7 +57,7 @@ const Navbar = () => {
               Contact
             </a>
           </li>
-        ) : null}
+        )}
       </ul>
 
       <button
