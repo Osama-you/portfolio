@@ -1,5 +1,14 @@
-import './App.css'
+import { useThemeContext } from './contexts/theme';
+import './App.css';
 
-const App = () => <div className="App">Hi Osama-you</div>
+const App = () => {
+  const { themeName } = useThemeContext();
 
-export default App
+  return (
+    <div className={`${themeName} app`}>
+      <main />
+    </div>
+  );
+};
+
+export default App;
