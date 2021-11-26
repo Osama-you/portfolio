@@ -1,4 +1,6 @@
+import { Header } from 'components';
 import { useThemeContext } from './contexts/theme';
+
 import './App.css';
 
 const App = () => {
@@ -6,6 +8,7 @@ const App = () => {
 
   return (
     <div className={`${themeName} app`}>
+      <Header />
       <main />
     </div>
   );
