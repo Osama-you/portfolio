@@ -19,11 +19,14 @@ const ThemeProvider = ({ children }) => {
   const toggleTheme = () => {
     const name = themeName === 'dark' ? 'light' : 'dark';
     localStorage.setItem('themeName', name);
-
     setThemeName(name);
   };
 
-  const providerValue = useMemo(() => ({ themeName, toggleTheme }), []);
+  const providerValue = useMemo(
+    () => ({ themeName, toggleTheme }),
+    [themeName]
+  );
+
   return (
     <ThemeContext.Provider value={providerValue}>
       {children}
