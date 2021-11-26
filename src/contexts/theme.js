@@ -8,8 +8,12 @@ const ThemeProvider = ({ children }) => {
   const [themeName, setThemeName] = useState('light');
 
   useEffect(() => {
+    const localStorageTheme = localStorage.getItem('themeName');
     const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setThemeName(darkMediaQuery.matches ? 'dark' : 'light');
+
+    setThemeName(
+      localStorageTheme || (darkMediaQuery.matches ? 'dark' : 'light')
+    );
 
     darkMediaQuery.addEventListener('change', (e) => {
       setThemeName(e.matches ? 'dark' : 'light');
